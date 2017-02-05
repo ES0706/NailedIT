@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>NailedIT</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<header class ="jumbotron">
+<div class = "menu container">
+<ul class = "menuItems">
+<li><a href = # onclick = "about()">About</a></li>
+<div class = "dropdown customerDrop">
+<li id="li1" class = "dropdown-toggle" data-toggle="dropdown"><a href = #>Customers<span class="caret"></span></a></li>
+<ul class="dropdown-menu customerUl"> 
+<li><a href = # onclick = "customers()">List of all customers</li>
+<li><a href = # onclick = "customersNegative()">Customers with negative balance</a></li>
+</ul>
+</div>
+<li><a href = # onclick = "inactiveUsers()">Inactive users</a></li>
+</ul>
+<div class="searchBar">
+<input type="text">Search</input>
+</div>
+</div>
+</header>
+<body>
+<div class="row">
+<div class="col-sm-1 leftMenu container">
+<ul class = "news">
+<li><a href= # onclick = "totalMoney()" >Total money</a></li>
+<li><a href= # >Customer analysis</a></li>
+<li><a href= #></a></li>
+<li><a href= #></a></li>
+</ul>
+</div>
+<div class ="col-sm-11 main container">
+
+<table class="tableMain">
+<tr>
+<td>Index</td>
+<td>Id</td>
+<td>Guid</td>
+<td>Active</td>
+<td>Name</td>
+<td>Gender</td>
+<td>Age</td>
+<td>Company</td>
+<td>Email</td>
+<td>Address</td>
+<td>Phone</td>
+<td>Date of registration</td>
+<td>Money balance</td>
+</tr>
+</table>
+<table class ="tableNegative">
+<tr>
+<td>Index</td>
+<td>Id</td>
+<td>Guid</td>
+<td>Active</td>
+<td>Name</td>
+<td>Gender</td>
+<td>Age</td>
+<td>Company</td>
+<td>Email</td>
+<td>Address</td>
+<td>Phone</td>
+<td>Date of registration</td>
+<td>Money balance</td>
+</tr>
+</table>
+<table class ="tableInactive">
+<tr>
+<td>Index</td>
+<td>Id</td>
+<td>Guid</td>
+<td>Active</td>
+<td>Name</td>
+<td>Gender</td>
+<td>Age</td>
+<td>Company</td>
+<td>Email</td>
+<td>Address</td>
+<td>Phone</td>
+<td>Date of registration</td>
+<td>Money balance</td>
+<td>Discount for services</td>
+</tr>
+</table>
+<p class ="totalMoney1"></p>
+<p class = "aboutP"></p>
+</div>
+<script src="customers.json" ></script>
+<script src="script.js" ></script>
+</body>
+</html>
